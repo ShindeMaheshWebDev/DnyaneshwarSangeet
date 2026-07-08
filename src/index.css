@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  background: #050816;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: white;
+}
+
+.marathi {
+  font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#facc15, #f59e0b);
+  border-radius: 999px;
+}
+
+.glow-text {
+  text-shadow:
+    0 0 10px rgba(250, 204, 21, 0.5),
+    0 0 30px rgba(250, 204, 21, 0.3);
+}
