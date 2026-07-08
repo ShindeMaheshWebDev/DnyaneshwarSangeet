@@ -21,7 +21,7 @@ import {
   ShieldCheck,
   CalendarDays,
 } from "lucide-react";
-import GuruImage from '../assets/images/guru2.png'
+import GuruImage from '../assets/images/Guru2.png'
 import cert1 from "../assets/images/cert1.jpeg"
 
 /* =========================================================

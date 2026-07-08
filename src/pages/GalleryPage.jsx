@@ -32,7 +32,7 @@ import {
 } from "lucide-react";
 
 import practice from "../assets/images/practice2.jpeg"
-import guru2 from "../assets/images/guru2.png"
+import guru2 from "../assets/images/Guru2.png"
 import cert1 from "../assets/images/cert1.jpeg"
 import AnilSir from "../assets/images/AnilSir.jpeg"
 

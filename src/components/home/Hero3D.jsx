@@ -23,7 +23,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
 
 import veenaModel from "../../assets/models/veena-optimized.glb";
-import guruImage from "../../assets/images/guru2.png";
+import guruImage from "../../assets/images/Guru2.png";
 
 import PremiumButton from "../common/PremiumButton";
 
