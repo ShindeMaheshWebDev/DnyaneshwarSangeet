@@ -26,6 +26,7 @@ import {
    NAV LINKS
 ========================================================= */
 
+const MotionNavLink = motion(NavLink);
 const navLinks = [
   {
     name: "Home",
@@ -801,92 +802,92 @@ const Navbar = () => {
               {/* LINKS */}
 
               <div className="w-full max-w-md space-y-4">
-                {navLinks.map(
-                  (item, index) => (
-                    <motion.a
-                      key={index}
-                      href={item.href}
-                      custom={index}
-                      variants={
-                        navItem
-                      }
-                      initial="hidden"
-                      animate="show"
-                      onClick={() =>
-                        setMobileMenu(
-                          false
-                        )
-                      }
-                      className="
-                        group
-                        block
-                      "
-                    >
-                      <div
-                        className="
-                          relative
-                          overflow-hidden
-                          rounded-[22px]
-                          border
-                          border-white/10
-                          bg-white/[0.04]
-                          px-6
-                          py-5
-                          backdrop-blur-xl
-                        "
-                      >
-                        <div
-                          className="
-                            absolute
-                            inset-0
-                            bg-gradient-to-r
-                            from-yellow-400/10
-                            via-transparent
-                            to-purple-500/10
-                            opacity-0
-                            transition
-                            duration-300
-                            group-hover:opacity-100
-                          "
-                        />
+  {navLinks.map(
+    (item, index) => (
+      <MotionNavLink
+        key={index}
+        to={item.href}
+        custom={index}
+        variants={
+          navItem
+        }
+        initial="hidden"
+        animate="show"
+        onClick={() =>
+          setMobileMenu(
+            false
+          )
+        }
+        className="
+          group
+          block
+        "
+      >
+        <div
+          className="
+            relative
+            overflow-hidden
+            rounded-[22px]
+            border
+            border-white/10
+            bg-white/[0.04]
+            px-6
+            py-5
+            backdrop-blur-xl
+          "
+        >
+          <div
+            className="
+              absolute
+              inset-0
+              bg-gradient-to-r
+              from-yellow-400/10
+              via-transparent
+              to-purple-500/10
+              opacity-0
+              transition
+              duration-300
+              group-hover:opacity-100
+            "
+          />
 
-                        <div
-                          className="
-                            relative
-                            z-10
-                            flex
-                            items-center
-                            justify-between
-                            gap-5
-                          "
-                        >
-                          <span
-                            className="
-                              text-xl
-                              font-semibold
-                              tracking-tight
-                              text-white
-                            "
-                          >
-                            {item.name}
-                          </span>
+          <div
+            className="
+              relative
+              z-10
+              flex
+              items-center
+              justify-between
+              gap-5
+            "
+          >
+            <span
+              className="
+                text-xl
+                font-semibold
+                tracking-tight
+                text-white
+              "
+            >
+              {item.name}
+            </span>
 
-                          <ArrowUpRight
-                            size={22}
-                            className="
-                              text-yellow-300
-                              transition-all
-                              duration-300
-                              group-hover:-translate-y-1
-                              group-hover:translate-x-1
-                            "
-                          />
-                        </div>
-                      </div>
-                    </motion.a>
-                  )
-                )}
-              </div>
+            <ArrowUpRight
+              size={22}
+              className="
+                text-yellow-300
+                transition-all
+                duration-300
+                group-hover:-translate-y-1
+                group-hover:translate-x-1
+              "
+            />
+          </div>
+        </div>
+      </MotionNavLink>
+    )
+  )}
+</div>
 
               {/* CONTACT CARD */}
 
